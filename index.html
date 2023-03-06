@@ -25,14 +25,19 @@
         <div class="botao">
             <div class="itemInput">
                 <label>Item</label>
-                <input type="text" name="" id="item" placeholder="Nome do item"> 
+                <input type="text" id="item" placeholder="Nome do item"> 
             </div>
+            
             <div class="itemInput">
                 <label>Estoque</label>
-                <input type="text" name="" id="item" placeholder="Nome do estoque"> 
+                <input type="text"  id="estoque" placeholder="Nome do estoque"> 
             </div>
-            <button onclick="item.adicionar()">Adicionar</button>
-            <button onclick="item.excluir()">Deletar</button>
+            <div class="itemInput">
+                <label>Quantidade</label>
+                <input type="text" id="quantidade" placeholder="Quantidade"> 
+            </div>
+            <button onclick="item.adicionar()">Salvar</button>
+            <button onclick="item.cancelar()">Cancelar</button>
         </div>
         <div class="conteudo">
             <table  border="1">
@@ -43,27 +48,8 @@
                     <th>Quantidade</th>
                     <th class="conteudo" >Ação</th>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td class="centro">1</td>
-                        <td>mouse</td>
-                        <td>São Paulo</td>
-                        <td>5</td>
-                        <td class="conteudo">
-                            <img src="./img/editar.png" alt="">
-                            <img src="./img/excluir.png" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="centro">1</td>
-                        <td>mouse</td>
-                        <td>São Paulo</td>
-                        <td>5</td>
-                        <td class="conteudo">
-                            <img src="./img/editar.png" alt="">
-                            <img src="./img/excluir.png" alt="">
-                        </td>
-                    </tr>
+                <tbody id="tbody">
+                
                 </tbody>
             </table>
 
